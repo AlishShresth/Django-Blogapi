@@ -19,7 +19,7 @@ jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 marshmallow==3.26.1
 packaging==24.2
-psycopg2==2.9.10
+psycopg2-binary==2.9.10
 python-dotenv==1.0.1
 pytz==2025.1
 PyYAML==6.0.2

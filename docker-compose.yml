@@ -1,0 +1,15 @@
+#  docker compose version
+ version: "3.9"
+# services (or containers) we want to have running within our Docker host
+ services:
+    web:
+        # build set to look in the current directory for a Dockerfile
+        build: .
+        # map port 8000 on our host to port 8000 on the container
+        ports:
+            - "8000:8000"
+        # command to run when the container starts
+        command: python manage.py runserver 0.0.0.0:8000
+        # automatically syncs the Docker filesystem with our local filesystem
+        volumes:
+            - .:/code
